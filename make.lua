@@ -84,7 +84,7 @@ lm:phony "all" {
         }
     }
 }
-
+lm.notest = true
 if lm.notest then
     lm:default {
         "all",
