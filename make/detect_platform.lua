@@ -24,7 +24,8 @@ elseif platform.os == 'linux' then
     if     lm.platform == nil then
     elseif lm.platform == "linux-x64" then
     elseif lm.platform == "linux-arm64" then
-        lm.cc = 'aarch64-linux-gnu-gcc'
+        lm.cc = 'aarch64-linux-android-gcc'
+        lm.cxx = 'aarch64-linux-android-g++'
     else
         error "unknown platform"
     end
