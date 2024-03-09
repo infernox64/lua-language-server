@@ -4,7 +4,7 @@ lm.c = lm.compiler == 'msvc' and 'c89' or 'c11'
 lm.cxx = 'c++17'
 
 if lm.sanitize then
-    lm.mode = "debug"
+    lm.mode = "release"
     lm.flags = "-fsanitize=address"
     lm.gcc = {
         ldflags = "-fsanitize=address"
